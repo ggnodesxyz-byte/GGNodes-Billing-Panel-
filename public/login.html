@@ -10,12 +10,13 @@
 <div class="container">
   <h2>GGNodes Login</h2>
 
-  <form>
-    <input type="email" placeholder="Email" required>
-    <input type="password" placeholder="Password" required>
+  <form onsubmit="event.preventDefault(); loginUser();">
+  <input id="login-email" type="email" placeholder="Email" required>
+  <input id="login-password" type="password" placeholder="Password" required>
+  <button type="submit">Login</button>
+</form>
 
-    <button type="submit">Login</button>
-  </form>
+<script src="script.js"></script>
 
   <p>Don't have an account?  
     <a href="register.html">Register</a>
